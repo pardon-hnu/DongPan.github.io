@@ -1,0 +1,16 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+#sidebar {
+  background-image: url(https://github.com/pardon-hnu/MarkdownPicture/blob/main/nachoneko1.jpg); /* <- change background image */
+  background-size: cover; /* <- customize the image size */
+  background-repeat: no-repeat; /* <- no-repeat */
+  background-position: top; /* <- image position */
+}
