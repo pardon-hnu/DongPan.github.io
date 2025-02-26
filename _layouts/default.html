@@ -53,8 +53,6 @@ layout: compress
               {% assign _include_path = _include | append: '.html' %}
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
-
-            {% include_cached footer.html lang=lang %}
           </div>
         </div>
 
@@ -84,3 +82,5 @@ layout: compress
     {% include_cached search-loader.html lang=lang %}
   </body>
 </html>
+
+<script src="{{ '/assets/js/sidebar-toggle.js' | relative_url }}"></script>
