@@ -9,8 +9,26 @@
 
 /* append your custom style below */
 #sidebar {
-  background-image: url(https://github.com/pardon-hnu/MarkdownPicture/blob/main/nachoneko1.jpg); /* <- change background image */
+  background-image: url(https://i.postimg.cc/QCmBq55w/nachoneko1.jpg); /* <- change background image */
   background-size: cover; /* <- customize the image size */
   background-repeat: no-repeat; /* <- no-repeat */
   background-position: top; /* <- image position */
+}
+
+#sidebar .site-title a
+{
+  color: #ffffff !important; 
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+#sidebar .site-subtitle {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+}
+
+/* 设置全站背景图片 */
+body {
+  background-image: url('https://i.postimg.cc/0Q2ryjhC/nachoneko3.png');  /* 设置背景图片路径 */
+  background-size: cover;  /* 背景图片大小适应 */
+  background-position: center;  /* 背景图片居中 */
+  background-attachment: fixed;  /* 背景固定不随滚动 */
 }
