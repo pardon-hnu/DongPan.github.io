@@ -41,7 +41,7 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    {% unless site.theme_mode %}
+    <!-- {% unless site.theme_mode %}
       <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
         <i class="fas fa-adjust"></i>
       </button>
@@ -49,13 +49,25 @@
       {% if site.data.contact.size > 0 %}
         <span class="icon-border"></span>
       {% endif %}
-    {% endunless %}
+    {% endunless %} -->
 
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'QQ' %}
+          {%- capture url -%}
+            https://user.qzone.qq.com/{{ site[entry.type].id }}
+          {%- endcapture -%}
+        {% when 'ResearchGate' %}
+          {%- capture url -%}
+            https://www.researchgate.net/profile/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'ORCID' %}
+          {%- capture url -%}
+            https://orcid.org/{{ site[entry.type].id }}
           {%- endcapture -%}
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}

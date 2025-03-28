@@ -5,11 +5,11 @@
   --main-border-color: #f3f3f3;
 
   /* Common color */
-  --text-color: #34343c;
+  --text-color: black;
   --text-muted-color: #757575;
   --text-muted-highlight-color: inherit;
   --heading-color: #2a2a2a;
-  --label-color: #585858;
+  --label-color: white;
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
   --link-color: #0056b2;
@@ -33,16 +33,16 @@
   );
 
   /* Sidebar */
-  --site-title-color: rgb(113, 113, 113);
-  --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
-  --sidebar-border-color: #efefef;
-  --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
-  --sidebar-btn-bg: white;
-  --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  --site-title-color: #ffffff; //站点标题（Site Title） 的颜色
+  --site-subtitle-color: #717171; //副标题（Subtitle） 的颜色
+  --sidebar-bg: #f6f8fa; //侧边栏背景颜色
+  --sidebar-border-color: #efefef;  // 侧边栏的边框颜色
+  --sidebar-muted-color: black; //未选中状态的文字颜色
+  --sidebar-active-color: #098ff5;  //当前选中的菜单项颜色
+  --sidebar-hover-bg: rgb(223, 233, 241, 0.64); //鼠标悬停时的背景颜色
+  --sidebar-btn-bg: white;  // 侧边栏按钮的背景颜色
+  --sidebar-btn-color: #8e8e8e; //按钮的文字颜色
+  --avatar-border-color: white; //头像的边框颜色
 
   /* Topbar */
   --topbar-bg: rgb(255, 255, 255, 0.7);
@@ -57,22 +57,22 @@
   --btn-paginator-hover-color: var(--sidebar-bg);
 
   /* Posts */
-  --toc-highlight: #0550ae;
-  --toc-popup-border-color: lightgray;
-  --btn-share-color: gray;
-  --btn-share-hover-color: #0d6efd;
-  --card-bg: white;
-  --card-hovor-bg: #e2e2e2;
+  --toc-highlight: #0550ae; //文章目录高亮颜色
+  --toc-popup-border-color: lightgray;  //目录弹出框的边框颜色
+  --btn-share-color: #8e8e8e; //默认状态下的分享按钮颜色
+  --btn-share-hover-color: #0d6efd; //鼠标悬停时，分享按钮的颜色
+  --card-bg: rgba(255, 255, 255, 0.1); //文章卡片的背景颜色
+  --card-hovor-bg: #e2e2e2; //鼠标悬停时，文章卡片的背景颜色
   --card-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0,
-    rgba(211, 209, 209, 0.15) 0 0 0 1px;
-  --footnote-target-bg: lightcyan;
-  --tb-odd-bg: #fbfcfd;
-  --tb-border-color: #eaeaea;
-  --dash-color: silver;
-  --kbd-wrap-color: #bdbdbd;
-  --kbd-text-color: var(--text-color);
-  --kbd-bg-color: white;
-  --prompt-text-color: rgb(46, 46, 46, 0.77);
+    rgba(211, 209, 209, 0.15) 0 0 0 1px;  //文章卡片的阴影, 第一层阴影:模糊6pt,第二层阴影:边框阴影
+  --footnote-target-bg: lightcyan;  //脚注目标高亮背景色
+  --tb-odd-bg: #fbfcfd; //表格的 奇数行 背景颜色
+  --tb-border-color: #eaeaea; //表格边框颜色
+  --dash-color: silver; //代码块和提示框:虚线或破折号的颜色
+  --kbd-wrap-color: #bdbdbd; //代码块和提示框:键盘输入 (<kbd>标签) 的 外框颜色
+  --kbd-text-color: var(--text-color); //代码块和提示框:键盘输入 (<kbd> 标签) 文本颜色
+  --kbd-bg-color: white;  //代码块和提示框:键盘输入 (<kbd> 标签) 背景颜色
+  --prompt-text-color: rgb(46, 46, 46, 0.77); //提示框内文字的颜色
   --prompt-tip-bg: rgb(123, 247, 144, 0.2);
   --prompt-tip-icon-color: #03b303;
   --prompt-info-bg: #e1f5fe;
